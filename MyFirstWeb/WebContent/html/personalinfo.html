@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+label {
+	display: inline-block;
+	float: left;
+	clear: left;
+	width: 250px;
+	text-align: left;
+}
+
+input[type="text"] {
+	display: inline-block;
+	float: left;
+}
+
+input[type="radio"] {
+	margin: 0 1%;
+}
+</style>
+<meta charset="ISO-8859-1">
+<title>personalinfo</title>
+</head>
+<body>
+	<form
+		action="//localhost:8080/MyFirstWeb/html/contactinfo.html"
+		target="_self" method="post">
+		<fieldset>
+			<legend style="font-size:150%;"> Personal Information : </legend>
+			<div>
+				<br> <br> <label>FirstName</label> <input type="text"
+					name="firstname" required> <br> <br> <label>MiddleName</label>
+				<input type="text" name="middlename"><br> <br> <label>LastName</label>
+				<input type="text" name="lastname" required><br> <br> <br>
+				<label>Gender</label> <input type="radio" name="gender" value="male"
+					checked>Male<input type="radio" name="gender"
+					value="female">Female<br> <br> <br> <input
+					type="submit" value="Submit" formenctype="multipart/form-data" style="margin: 0 40%;">
+			</div>
+		</fieldset>
+	</form>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<style>
+label {
+	display: inline-block;
+	float: left;
+	clear: left;
+	width: 250px;
+	text-align: left;
+}
+
+input {
+	display: inline-block;
+	float: left;
+}
+</style>
+<title>WeatherInfo</title>
+</head>
+<body>
+<form action="//localhost:8080/MyFirstWeb/html/WeatherDetails.html"
+		target="_self" method="post">
+		<fieldset>
+		<legend style="font-size:150%;">Weather :</legend>
+		<br>
+		<div>
+		<label>City</label><input type="text" name="city"><br><br>
+		<label>Zip Code</label><input type="text" name="zipcode"><br><br><br>
+		</div>
+		<input type="submit" value="Get Me Weather" style="margin:0 40%;">		
+		</fieldset>
+</form>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<style>
+label {
+	display: inline-block;
+	float: left;
+	clear: left;
+	width: 250px;
+	text-align: left;
+}
+
+input {
+	display: inline-block;
+	float: left;
+}
+</style>
+<title>contactinfo</title>
+</head>
+<body>
+	<form
+		action="//localhost:8080/MyFirstWeb/html/bankinfo.html"
+		target="_self" method="post">
+		<fieldset>
+		 	<legend style="font-size:150%;">Contact Information : </legend>
+			<div>
+				<br> <br> <label>Address</label>
+				<textarea name="address" rows="2" cols="15" required></textarea>
+				<br> <br> <label>City</label> <input type="text"
+					name="city" required><br> <br> <label>State</label> <input
+					type="text" name="state" required><br> <br> <label>Country</label>
+				<input type="text" name="country" required><br> <br> <label>Phone</label>
+				<input type="tel" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder = "000-000-0000"><br> <br> <br>
+				<input type="submit" value="Submit" formenctype="multipart/form-data" style="margin:0 42%">
+			</div>
+		</fieldset>
+	</form>
+</body>
+</html>
